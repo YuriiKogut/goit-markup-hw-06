@@ -18,7 +18,7 @@ a {
 }
 
 .container {
-    max-width: 428px;
+    width: 320px;
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
@@ -259,6 +259,8 @@ border: 1px solid transparent;
     cursor: pointer;
 }
 
+/* ------------------------------------------------------------- */
+
 .selector_container {
     padding: 96px 0;
     margin: 0 auto;
@@ -288,10 +290,11 @@ border: 1px solid transparent;
 
 }
 
-
-
 .li_h{
     font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.045rem;
+    font-weight: 700;
     color: var(--navyblue, #2E2F42);
     display: flex;
     flex-direction: row;
@@ -329,11 +332,11 @@ border: 1px solid transparent;
 
 
 .peculiarities_item {
-    margin-top: 16px;
+    margin-top: 8px;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 24px; /* 150% */
-    letter-spacing: 0.32px;
+    font-weight: 500;
+    line-height: 1.5; /* 150% */
+    letter-spacing: 0.02rem;
     color: rgba(67, 68, 85, 1);
 }
 
@@ -411,8 +414,7 @@ border: 1px solid transparent;
     border: 1px solid var(--cornflower, #E7E9FC);
     overflow: hidden;
     width:calc((100% - (24px * 2)) /3 );
-    width: 360px;
-    height: 400px;
+    width: 288px;
     background: var(--white, #FFF);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -428,8 +430,7 @@ border: 1px solid transparent;
 
 .work_img {
     object-fit: cover;
-    width: 100%;
-    height: 280px;
+    width: 288px;
 }
 
 .div_work {
@@ -547,7 +548,7 @@ border: 1px solid transparent;
     align-items: center;
     justify-content: center;
     gap: 24px;
-    padding-top: 8px;
+    margin-top: 8px;
 }
 
 .icons-link-team {
@@ -1100,8 +1101,6 @@ letter-spacing: 0.32px;
 }
 
 .js-close-menu {
-    margin-top: 24px;
-    margin-right: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1127,6 +1126,10 @@ letter-spacing: 0.32px;
 }
 
 .mobile-menu {
+    padding-top: 24px;
+    padding-left: 16px;
+    padding-bottom: 40px;
+    padding-right: 24px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1136,7 +1139,6 @@ letter-spacing: 0.32px;
 }
 
 .mobile-li_web_studio_header {
-    padding: 0 16px;
 }
 
 .mobile-web_studio {
@@ -1166,7 +1168,7 @@ letter-spacing: 0.32px;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.045em;
-    color: var(--navyblue, #2E2F42);
+    color: #404BBF;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
@@ -1189,8 +1191,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 
 
 .mobile-address {
-    padding: 0 16px;
-    padding-top: 168px;
+    margin-top: 168px;
 }
 
 .mobile-li_nav_cont {
@@ -1205,11 +1206,14 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mobile-li_a-phone {
+    color: #4D5AE5;
+}
+
 .mobile-ul-link {
     display: flex;
     gap: 40px;
     margin-top: 48px;
-    margin-left: 16px;
 }
 
 /* Adaptation Tablet */
@@ -1221,7 +1225,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
     }
 
     .container {
-    max-width: 768px;
+    width: 768px;
     }
 
     .web_studio {
@@ -1268,6 +1272,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
     .links {
     padding: 0;
     font-size: 12px;
+    font-weight: 400;
     }
 
     .hero {
@@ -1332,8 +1337,13 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
     width: 356px;
     }
 
+    .work_img {
+        width: 356px;
+        height: 300px;
+    }
+
     .footer-container {
-    margin-left: 108px;
+    padding-left: 108px;
     gap: 72px 24px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1379,7 +1389,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
     }
 
     .container {
-    max-width: 1158px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     }
@@ -1399,6 +1409,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
     .links {
     color: #434455;
     font-size: 16px;
+    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02rem;
     }
@@ -1463,6 +1474,9 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
         width: 360px;
     }
 
+    .work_img {
+        width: 360px;
+    }
     .footer {
         padding: 100px 0;
     }
